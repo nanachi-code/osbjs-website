@@ -10,7 +10,7 @@ function SidebarItem({ documentSlug, title }) {
 			<Link href={`/docs/${documentSlug}`}>
 				<a
 					className={`border-l pl-3 ${
-						slug == documentSlug || (!slug && documentSlug == 'installation')? 'border-blue-500 text-blue-500' : 'hover:border-blue-500 hover:text-blue-500'
+						slug == documentSlug || (!slug && documentSlug == 'installation')? 'border-blue-500 text-blue-500' : 'hover:border-blue-500 hover:text-blue-500 transition-colors duration-200'
 					}`}
 				>
 					{title}

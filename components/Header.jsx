@@ -1,4 +1,4 @@
-import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faDiscord, faGithub } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -16,20 +16,30 @@ function Header() {
 					</Link>
 
 					<Link href="/docs">
-						<a className="text-lg transition duration-200 hover:text-osbjs">Documentation</a>
+						<a className="font-semibold transition duration-200 hover:text-blue-500">Documentation</a>
 					</Link>
 
 					<Link href="/learn">
-						<a className="text-lg transition duration-200 hover:text-osbjs">Learn</a>
+						<a className="font-semibold transition duration-200 hover:text-blue-500">Learn</a>
+					</Link>
+
+					<Link href="/showcase">
+						<a className="font-semibold transition duration-200 hover:text-blue-500">Showcase</a>
 					</Link>
 				</div>
 
 				<div className="flex items-center justify-end">
-					<input type="text" name="search" className="mr-3 rounded" placeholder="Search..." />
+					<input type="text" name="search" className="mr-6 w-96 rounded" placeholder="Search..." />
 
 					<Link href="https://github.com/osbjs/osbjs">
+						<a className="mr-6">
+							<FontAwesomeIcon size="lg" icon={faGithub} />
+						</a>
+					</Link>
+
+					<Link href="https://discord.gg/t2sHY8TdMA">
 						<a>
-							<FontAwesomeIcon size='lg' icon={faGithub} />
+							<FontAwesomeIcon size="lg" icon={faDiscord} />
 						</a>
 					</Link>
 				</div>
