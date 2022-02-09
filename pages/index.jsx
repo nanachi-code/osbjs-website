@@ -2,11 +2,12 @@ import Head from 'next/head'
 import Link from 'next/link'
 import Footer from '../components/Footer.jsx'
 import Header from '../components/Header.jsx'
-import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
-import { vscDarkPlus } from 'react-syntax-highlighter/dist/cjs/styles/prism'
 import YouTube from 'react-youtube'
+import { useEffect } from 'react'
+import { markdownToHtml } from '../lib/utils.js'
 
-const defaultCode = `const {
+const defaultCode = `\`\`\`javascript
+const {
 	Storyboard,
 	Sprite,
 	Easing,
@@ -34,9 +35,11 @@ sprite.Move(startTime, endTime, startPos, endPos, Easing.OutExpo)
 sb.registerComponents(sprite)
 
 // Generate storyboard file.
-sb.generate()`
+sb.generate()
+\`\`\``
 
-const componentCode = `// components/Flash.js
+const componentCode = `\`\`\`javascript
+// components/Flash.js
 const { Sprite, Component, Layer, OsbVector2 } = require('@osbjs/osbjs')
 
 module.exports = class Flash extends Component {
@@ -60,11 +63,12 @@ module.exports = class Flash extends Component {
 const Flash = require('./components/Flash')
 
 let fl = new Flash(0, 3000)
-scene.registerComponents(fl)`
+scene.registerComponents(fl)
+\`\`\``
 
-export default function Home() {
+export default function Home(props) {
 	return (
-		<div>
+		<>
 			<Head>
 				<title>osbjs - A minimalist component-based osu! storboarding framework</title>
 				<meta name="description" content="osbjs documentation" />
@@ -104,22 +108,14 @@ export default function Home() {
 							</p>
 						</div>
 
-						<div>
-							<SyntaxHighlighter language="javascript" style={vscDarkPlus}>
-								{defaultCode}
-							</SyntaxHighlighter>
-						</div>
+						<div dangerouslySetInnerHTML={{ __html: props.defaultCode }} />
 					</div>
 				</section>
 
 				{/* Features 2 */}
 				<section className="mb-48">
 					<div className="m-auto grid max-w-screen-xl grid-cols-2 gap-12">
-						<div>
-							<SyntaxHighlighter language="javascript" style={vscDarkPlus}>
-								{componentCode}
-							</SyntaxHighlighter>
-						</div>
+					<div dangerouslySetInnerHTML={{ __html: props.componentCode }} />
 
 						<div>
 							<h2 className="text-5xl font-bold">Flexible. Reusable.</h2>
@@ -140,35 +136,35 @@ export default function Home() {
 						</div>
 
 						<div className="grid grid-cols-3 gap-6">
-							<Link href="/docs/package/cli">
+							<Link href="/docs/cli-usage">
 								<a className="rounded border border-black p-3 transition duration-200 hover:bg-blue-100">
 									<div className="font-bold">cli</div>
 									<p>CLI tool for osbjs</p>
 								</a>
 							</Link>
 
-							<Link href="/docs/package/osujs">
+							<Link href="/docs/osujs-usage">
 								<a className="rounded border border-black p-3 transition duration-200 hover:bg-blue-100">
 									<div className="font-bold">osujs</div>
 									<p>osu! beatmap parser</p>
 								</a>
 							</Link>
 
-							<Link href="/docs/package/math">
+							<Link href="/docs/math-usage">
 								<a className="rounded border border-black p-3 transition duration-200 hover:bg-blue-100">
 									<div className="font-bold">math</div>
 									<p>Math helpers</p>
 								</a>
 							</Link>
 
-							<Link href="/docs/package/txtgen">
+							<Link href="/docs/txtgen-usage">
 								<a className="rounded border border-black p-3 transition duration-200 hover:bg-blue-100">
 									<div className="font-bold">txtgen</div>
 									<p>Text image generator for osbjs</p>
 								</a>
 							</Link>
 
-							<Link href="/docs/package/components">
+							<Link href="/docs/components-usage">
 								<a className="rounded border border-black p-3 transition duration-200 hover:bg-blue-100">
 									<div className="font-bold">components</div>
 									<p>osbjs pre-built components</p>
@@ -202,6 +198,15 @@ export default function Home() {
 
 				<Footer />
 			</main>
-		</div>
+		</>
 	)
+}
+
+export async function getStaticProps() {
+	return {
+		props: {
+			defaultCode: await markdownToHtml(defaultCode),
+			componentCode: await markdownToHtml(componentCode),
+		},
+	}
 }
