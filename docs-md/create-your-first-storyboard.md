@@ -9,9 +9,9 @@ const sb = new Storyboard('osb_filename.osb', 'path/to/beatmap/folder')
 sb.generate()
 ```
 
-osb filename will usually be `Artist - Song (Creator).osb`. Now you will have the storyboard instance ready to generate.
+osb filename will usually be `Artist - Song (Creator).osb`.
 
-We will now create a new sprite. A sprite is a static image that we can attach some commands to it like move, fade, scale etc.
+Now we will create a new sprite. A sprite is a static image that we can attach some commands to it like move, fade, scale etc.
 In this example we will reuse the beatmap background image and make it fade out.
 
 ```javascript

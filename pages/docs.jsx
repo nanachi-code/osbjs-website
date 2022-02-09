@@ -6,7 +6,7 @@ function Documentation({ doc }) {
 		<>
 			<DocumentLayout>
 				<div
-					className="prose max-w-4xl p-4 prose-h1:font-bold prose-h2:font-bold prose-h3:font-bold prose-h4:font-bold"
+					className="prose mx-auto max-w-4xl p-4 prose-h1:font-bold prose-h2:font-bold prose-h3:font-bold prose-h4:font-bold"
 					dangerouslySetInnerHTML={{ __html: doc.content }}
 				/>
 			</DocumentLayout>

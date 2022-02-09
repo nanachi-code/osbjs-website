@@ -5,8 +5,8 @@ import Image from 'next/image'
 function Footer() {
 	return (
 		<footer>
-			<div className="m-auto max-w-screen-xl pb-24">
-				<div className="grid grid-cols-4">
+			<div className="mx-auto w-full max-w-screen-xl pb-24">
+				<div className="grid grid-cols-2 gap-6 md:grid-cols-4">
 					<div className="col-span-2">
 						<Link href="/">
 							<a>
@@ -16,7 +16,7 @@ function Footer() {
 						<p className="pl-2 text-lg">osbjs</p>
 						<p className="pl-2">A minimalist component-based osu! storyboarding framework.</p>
 					</div>
-					<div>
+					<div className="col-span-1">
 						<ul className="space-y-3">
 							<li>
 								<Link href="/docs">
@@ -35,7 +35,7 @@ function Footer() {
 							</li>
 						</ul>
 					</div>
-					<div>
+					<div className="col-span-1">
 						<ul className="space-y-3">
 							<li>
 								<Link href="https://github.com/osbjs/osbjs">
@@ -48,7 +48,7 @@ function Footer() {
 			</div>
 
 			<div className="bg-gray-100">
-				<div className="m-auto max-w-screen-xl">
+				<div className="mx-auto w-full max-w-screen-xl">
 					<div className="border-t py-2">
 						<p className="text-sm">Nanachi © 2021-2022</p>
 					</div>

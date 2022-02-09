@@ -1,8 +1,13 @@
 import Head from 'next/head'
+import { useState } from 'react'
 import DocumentHeader from './DocumentHeader.jsx'
 import Sidebar from './Sidebar.jsx'
 
 function DocumentLayout({ children }) {
+	const [isSidebarOpen, setSidebarOpen] = useState(true)
+	const [isSearchOpen, setSearchOpen] = useState(false)
+
+	const headerProps = { isSidebarOpen, setSidebarOpen, isSearchOpen, setSearchOpen }
 	return (
 		<>
 			<Head>
@@ -11,11 +16,11 @@ function DocumentLayout({ children }) {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 
-			<DocumentHeader />
+			<DocumentHeader {...headerProps} />
 
 			<main className="relative">
-				<Sidebar />
-				<div className="pl-[20rem]">{children}</div>
+				<Sidebar isSidebarOpen={isSidebarOpen} />
+				<div className="md:pl-[20rem]">{children}</div>
 			</main>
 		</>
 	)

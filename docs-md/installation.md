@@ -39,7 +39,7 @@ Open package.json and add the following script:
 	"dev": "nodemon index",
 }
 ```
-Now instead of run `npm run build`, you can run `npm run dev` instead.
+Now instead of running `npm run build` everytime you saved, you can run `npm run dev` instead.
 
 ## Next step
 Now that you have created your storyboard project, you can start [creating your first storyboard](/docs/create-your-first-storyboard).

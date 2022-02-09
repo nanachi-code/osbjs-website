@@ -1,8 +1,8 @@
 import SidebarItem from './SidebarItem.jsx'
 
-function Sidebar() {
+function Sidebar({ isSidebarOpen }) {
 	return (
-		<aside className="fixed inset-0 top-24 w-80 overflow-y-auto">
+		<aside className={`fixed inset-0 ${isSidebarOpen ? 'hidden' : ''} top-24 z-[99] w-80 overflow-y-auto bg-white md:block`}>
 			<div className="p-4">
 				<ul>
 					<li className="mb-8">
