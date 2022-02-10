@@ -1,3 +1,7 @@
+---
+name: Create your first storyboard
+---
+
 # Create your first storyboard
 
 Open `index.js` and add this base code:

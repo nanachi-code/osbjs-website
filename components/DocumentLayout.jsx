@@ -12,7 +12,10 @@ function DocumentLayout({ children }) {
 		<>
 			<Head>
 				<title>osbjs - A minimalist component-based osu! storboarding framework</title>
-				<meta name="description" content="osbjs documentation" />
+				<meta
+					name="description"
+					content="osbjs is an unopinionated framework which allows you to create osu! storyboard in a fast and flexible way."
+				/>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 

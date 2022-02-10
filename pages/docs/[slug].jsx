@@ -1,7 +1,11 @@
+import { useEffect } from 'react'
 import DocumentLayout from '../../components/DocumentLayout.jsx'
 import { getDocument, getDocuments, markdownToHtml } from '../../lib/utils.js'
 
 function Documentation({ doc }) {
+	useEffect(() => {
+		document.title = `${doc.data.name} | osbjs Documentation`
+	})
 	return (
 		<>
 			<DocumentLayout>

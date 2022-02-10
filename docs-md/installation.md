@@ -1,3 +1,7 @@
+---
+name: Getting started with osbjs
+---
+
 # Getting started with osbjs
 
 ## CLI (Recommended)
