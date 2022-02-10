@@ -3,15 +3,16 @@ import { useState } from 'react'
 import DocumentHeader from './DocumentHeader.jsx'
 import Sidebar from './Sidebar.jsx'
 
-function DocumentLayout({ children }) {
+function DocumentLayout({ children, title }) {
 	const [isSidebarOpen, setSidebarOpen] = useState(true)
 	const [isSearchOpen, setSearchOpen] = useState(false)
 
 	const headerProps = { isSidebarOpen, setSidebarOpen, isSearchOpen, setSearchOpen }
+
 	return (
 		<>
 			<Head>
-				<title>osbjs - A minimalist component-based osu! storboarding framework</title>
+				<title>{title}</title>
 				<meta
 					name="description"
 					content="osbjs is an unopinionated framework which allows you to create osu! storyboard in a fast and flexible way."

@@ -1,14 +1,10 @@
-import { useEffect } from 'react'
 import DocumentLayout from '../../components/DocumentLayout.jsx'
 import { getDocument, getDocuments, markdownToHtml } from '../../lib/utils.js'
 
 function Documentation({ doc }) {
-	useEffect(() => {
-		document.title = `${doc.data.name} | osbjs Documentation`
-	})
 	return (
 		<>
-			<DocumentLayout>
+			<DocumentLayout title={`${doc.data.name} | osbjs Documentation`}>
 				<div
 					className="prose mx-auto max-w-4xl p-4 prose-h1:font-bold prose-h2:font-bold prose-h3:font-bold prose-h4:font-bold"
 					dangerouslySetInnerHTML={{ __html: doc.content }}
