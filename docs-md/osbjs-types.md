@@ -5,7 +5,7 @@ name: Types
 # Types
 
 ## ISubtitle
-```ts
+```typescript
 interface ISubtitle { 
 	startTime: number
 	endTime: number
@@ -14,7 +14,7 @@ interface ISubtitle {
 ```
 
 ## IStoryboardLayers
-```ts
+```typescript
 interface IStoryboardLayers{
 	background: (Sprite | Animation)[]
 	foreground: (Sprite | Animation)[]
@@ -25,7 +25,7 @@ interface IStoryboardLayers{
 ```
 
 ## IVector2
-```ts
+```typescript
 interface IFontProperties {
 	fontSize: number
 	fontName: string

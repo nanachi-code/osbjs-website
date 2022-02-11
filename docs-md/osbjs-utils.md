@@ -5,7 +5,7 @@ name: Utils
 # Utils
 
 ## SubtitleCollection
-```ts
+```typescript
 new SubtitleCollection(path: string)
 ```
 Convert lyrics file into a time-text collection
@@ -16,19 +16,19 @@ Property:
 * **subtitles**: [`ISubtitle`](/docs/osbjs-types)[]
 
 ## `rgbToHex`
-```ts
+```typescript
 function rgbToHex(r: number, g: number, b: number): string
 ```
 Converts rgb color to its corresponding hex string.
 
 ## `parseOsuTimestamp`
-```ts
+```typescript
 function parseOsuTimestamp(timestamp: string): number
 ```
 Converts osu timestamp to miliseconds. osbjs calls this function under the hood.
 
 ## OsbColor
-```ts
+```typescript
 new OsbColor(r: number, g: number, b: number)
 ```
 
@@ -39,7 +39,7 @@ new OsbColor(r: number, g: number, b: number)
 Only use with sprite/animation.
 
 ## OsbVector2
-```ts
+```typescript
 new OsbVector2(x: number, y: number)
 ```
 

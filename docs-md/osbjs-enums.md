@@ -5,79 +5,113 @@ name: Enums
 # Enums
 
 ## Easing
-- `Linear`
-- `Out`
-- `In`
-- `InQuad`
-- `OutQuad`
-- `InOutQuad`
-- `InCubic`
-- `OutCubic`
-- `InOutCubic`
-- `InQuart`
-- `OutQuart`
-- `InOutQuart`
-- `InQuint`
-- `OutQuint`
-- `InOutQuint`
-- `InSine`
-- `OutSine`
-- `InOutSine`
-- `InExpo`
-- `OutExpo`
-- `InOutExpo`
-- `InCirc`
-- `OutCirc`
-- `InOutCirc`
-- `InElastic`
-- `OutElastic`
-- `OutElasticHalf`
-- `OutElasticQuarter`
-- `InOutElastic`
-- `InBack`
-- `OutBack`
-- `InOutBack`
-- `InBounce`
-- `OutBounce`
-- `InOutBounce`
+```typescript
+enum Easing {
+	Linear,
+	Out,
+	In,
+	InQuad,
+	OutQuad,
+	InOutQuad,
+	InCubic,
+	OutCubic,
+	InOutCubic,
+	InQuart,
+	OutQuart,
+	InOutQuart,
+	InQuint,
+	OutQuint,
+	InOutQuint,
+	InSine,
+	OutSine,
+	InOutSine,
+	InExpo,
+	OutExpo,
+	InOutExpo,
+	InCirc,
+	OutCirc,
+	InOutCirc,
+	InElastic,
+	OutElastic,
+	OutElasticHalf,
+	OutElasticQuarter,
+	InOutElastic,
+	InBack,
+	OutBack,
+	InOutBack,
+	InBounce,
+	OutBounce,
+	InOutBounce,
+}
+```
   
 ## Layer
-- `Background`
-- `Foreground`
-- `Fail`
-- `Pass`
+```typescript
+enum Layer {
+	Background = 'Background',
+	Foreground = 'Foreground',
+	Fail = 'Fail',
+	Pass = 'Pass',
+	Overlay = 'Overlay',
+}
+```
   
 ## Origin
-- `TopLeft`
-- `Centre` / `Center`
-- `CentreLeft` / `CenterLeft`
-- `TopRight`
-- `BottomCentre` / `BottomCenter`
-- `TopCentre` / `TopCenter`
-- `CentreRight` / `CenterRight`
-- `BottomLeft`
-- `BottomRight`
-  
+```typescript
+enum Origin {
+	TopLeft = 'TopLeft',
+	TopCenter = 'TopCentre',
+	TopCentre = 'TopCentre',
+	TopRight = 'TopRight',
+	CenterLeft = 'CentreLeft',
+	Center = 'Centre',
+	CenterRight = 'CentreRight',
+	CentreLeft = 'CentreLeft',
+	Centre = 'Centre',
+	CentreRight = 'CentreRight',
+	BottomLeft = 'BottomLeft',
+	BottomCenter = 'BottomCentre',
+	BottomCentre = 'BottomCentre',
+	BottomRight = 'BottomRight',
+}
+```
+
 ## LoopType
-- `LoopForever`
-- `LoopOnce`
+```typescript
+enum LoopType {
+	LoopForever = 'LoopForever',
+	LoopOnce = 'LoopOnce',
+}
+```
   
 ## Parameter
-- `None`
-- `FlipHorizontal`
-- `FlipVertical`
-- `AdditiveBlending`
-  
+```typescript
+enum Parameter {
+	None = '',
+	FlipHorizontal = 'H',
+	FlipVertical = 'V',
+	AdditiveBlending = 'A',
+}
+```
+
 ## SampleLayer
-- `Background`
-- `Foreground`
-- `Fail`
-- `Pass`
+```typescript
+enum SampleLayer {
+	Background,
+	Fail,
+	Pass,
+	Foreground,
+}
+```
   
 ## TriggerName
-- `HitSound`
-- `HitSoundClap`
-- `HitSoundWhistle`
-- `HitSoundFinish`
-- `Passing`
-- `Failing`
+```typescript
+enum TriggerName {
+	HitSound = 'HitSound',
+	HitSoundClap = 'HitSoundClap',
+	HitSoundFinish = 'HitSoundFinish',
+	HitSoundWhistle = 'HitSoundWhistle',
+	Passing = 'Passing',
+	Failing = 'Failing',
+}
+```

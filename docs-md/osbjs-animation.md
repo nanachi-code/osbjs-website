@@ -15,7 +15,7 @@ const animation = new Animation(
 )
 ```
 
-Create a new animation. A animation is also a component, therefore you can register it to storyboard directly, or add it to another components.
+Create a new animation. An animation is also a component, therefore you can register it to storyboard directly, or add it to another components.
 
 * **path**: path to the image file relative to the beatmap folder. For example, specify a filename like "sliderball.png", and name your files "sliderball0.png" to "sliderball9.png" for a 10 frame animation.
 * **layer**: [Layer](/docs/osbjs-enums)
