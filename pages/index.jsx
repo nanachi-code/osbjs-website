@@ -119,28 +119,28 @@ export default function Home(props) {
 							</a>
 						</Link>
 
-						<Link href="/docs/osujs-usage">
+						<Link href="/docs/osujs-introduction">
 							<a className="rounded border border-black p-3 transition duration-200 hover:bg-blue-100">
 								<div className="font-bold">osujs</div>
 								<p>osu! beatmap parser</p>
 							</a>
 						</Link>
 
-						<Link href="/docs/math-usage">
+						<Link href="/docs/math-introduction">
 							<a className="rounded border border-black p-3 transition duration-200 hover:bg-blue-100">
 								<div className="font-bold">math</div>
 								<p>Math helpers</p>
 							</a>
 						</Link>
 
-						<Link href="/docs/txtgen-usage">
+						<Link href="/docs/txtgen-introduction">
 							<a className="rounded border border-black p-3 transition duration-200 hover:bg-blue-100">
 								<div className="font-bold">txtgen</div>
 								<p>Text image generator for osbjs</p>
 							</a>
 						</Link>
 
-						<Link href="/docs/components-usage">
+						<Link href="/docs/components-introduction">
 							<a className="rounded border border-black p-3 transition duration-200 hover:bg-blue-100">
 								<div className="font-bold">components</div>
 								<p>osbjs pre-built components</p>
