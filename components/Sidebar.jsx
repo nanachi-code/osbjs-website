@@ -113,7 +113,7 @@ const sidebarItems = [
 				title: 'Lyrics',
 			},
 			{
-				documentSlug: 'components-hitobjecthiglight',
+				documentSlug: 'components-hitobjecthighlight',
 				title: 'HitObjectHighlight',
 			},
 			{
