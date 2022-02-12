@@ -9,6 +9,8 @@ const beatmap = new Beatmap(pathToBeatmap: string)
 ```
 
 ## Properties
+### `audioFilename`: string
+
 ### `difficulty`: [IBeatmapDifficulty](/docs/osujs-types)
 - `hp`: number
 - `circleSize`: number
