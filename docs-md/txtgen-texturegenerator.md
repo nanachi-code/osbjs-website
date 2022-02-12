@@ -18,7 +18,8 @@ interface IFontProperties {
 }
 ```
 
-### TextureGenerator#`generateTexture`
+## Instance methods
+### `generateTexture`
 ```typescript
 txtGen.generateTexture(text: string, color?: IColor, offset?: IOffsetOptions) : Texture
 ```
@@ -38,20 +39,20 @@ interface IOffsetOptions {
 }
 ```
 
-### TextureGenerator#`getTexture`
+### `getTexture`
 ```typescript
 txtGen.getTexture(text: string) : Texture | undefined
 ```
 Get generated [Texture](#texture) from cache, and return undefined if not exists. Use [`generateTexture`](#texturegeneratorgeneratetexture) instead.
 * **text**: Text.
 
-### TextureGenerator#`emptyDir`
+### `emptyDir`
 ```typescript
 txtGen.emptyDir()
 ```
 Clear folder that is used to save generated text image.
 
-### TextureGenerator#`registerFont`
+### `registerFont`
 ```typescript
 txtGen.registerFont(fontPath: string, family: string, weight?: string, style?: string)
 ```
