@@ -57,10 +57,6 @@ const sidebarItems = [
 				documentSlug: 'osbjs-enums',
 				title: 'Enums',
 			},
-			{
-				documentSlug: 'osbjs-types',
-				title: 'Types',
-			},
 		],
 	},
 	{

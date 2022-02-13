@@ -14,6 +14,13 @@ Convert lyrics file into a time-text collection
 
 Property:
 * **subtitles**: [`ISubtitle`](/docs/osbjs-types)[]
+```typescript
+interface ISubtitle { 
+	startTime: number
+	endTime: number
+	text: string
+}
+```
 
 ## `rgbToHex`
 ```typescript
@@ -47,3 +54,10 @@ new OsbVector2(x: number, y: number)
 * **y**: y value of this vector
 
 Only use with sprite/animation.
+
+### Static methods
+#### `fromVector2`
+```typescript
+OsbVector2.fromVector2(v: Vector2): OsbVector2
+```
+Create an OsbVector2 from a [Vector2](/docs/math-vector2). Helpful when u have a [Vector2](/docs/math-vector2) returned from a calcuation
