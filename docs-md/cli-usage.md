@@ -52,8 +52,8 @@ npx @osbjs/cli customize <name>
 ```
 where name is the component name. Available components: `background`, `hitobjecthighlight`, `lyrics`. This will also install needed dependencies for that component.
 
-#### Options:
-- **-t <template-name>**: template name. available: `common` for CommonJS syntax, `es` for ESModule syntax. Default: `common`
+### Create a new component
 ```bash
-npx @osbjs/cli customize lyrics -t es
+npx @osbjs/cli create-component <name>
 ```
+This will create an empty component.
