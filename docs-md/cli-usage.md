@@ -57,3 +57,9 @@ where name is the component name. Available components: `background`, `hitobject
 npx @osbjs/cli create-component <name>
 ```
 This will create an empty component.
+
+### Create a new scene
+```bash
+npx @osbjs/cli create-scene <name>
+```
+This will create an empty scene.
