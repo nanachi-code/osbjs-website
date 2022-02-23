@@ -116,6 +116,10 @@ const sidebarItems = [
 				documentSlug: 'components-removebg',
 				title: 'RemoveBackground',
 			},
+			{
+				documentSlug: 'components-importosb',
+				title: 'ImportOsb',
+			},
 		],
 	},
 	{
