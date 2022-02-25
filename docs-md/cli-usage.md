@@ -31,7 +31,10 @@ npx @osbjs/cli create-storyboard -d
 ```bash
 npx @osbjs/cli create-storyboard -t es
 ```
-
+- **-c**: if you don't want to generate example components.
+```bash
+npx @osbjs/cli create-storyboard -c
+```
 ### Customize a pre-built component
 In case you want to customize a pre-built component from `@osbjs/components` package, run:
 ```bash
