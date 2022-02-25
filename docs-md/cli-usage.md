@@ -5,26 +5,13 @@ name: CLI usage
 # CLI
 CLI tool for osbjs
 
-## Install
-Global
-```bash
-npm i -g @osbjs/cli
-```
-
-As dev dependency
-```bash
-npm i -D @osbjs/cli
-```
-
 ## Usage
-### Create a new storyboard project
-Create a new project folder, then open it:
+### Create a new storyboard project 
 ```bash
-cd your-project-folder
-npx @osbjs/cli create-storyboard
+npx @osbjs/cli create-storyboard [project-name]
 ```
-
-This will generate the initial project structure and install all the needed dependencies:
+This will generate the initial project structure and install all the needed dependencies.
+If project name is not specified, it will assume the project folder is the current directory where the command was executed.
 ```
 components
 ├── HelloWorld.js
