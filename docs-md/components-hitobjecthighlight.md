@@ -31,9 +31,6 @@ interface HitObjectHighlightOptions {
 
 ## Example
 ```javascript
-const { HitObjectHighlight } = require("@osbjs/components")
-const { Beatmap } = require("@osbjs/osujs")
-
 const beatmapPath = "D:/osu!/Songs/map_folder/map.osu"
 const beatmap = new Beatmap(beatmapPath)
 const highlight = new HitObjectHighlight("sb/circle.png", 1000, 5000, beatmap, {

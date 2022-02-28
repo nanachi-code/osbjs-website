@@ -25,7 +25,6 @@ Set background between start and end time.
 
 ## Example
 ```javascript
-const { Background } = require("@osbjs/components")
 const folderPath = "D:/osu!/Songs/map_folder"
 const bg = new Background("sb/bg.jpg", folderPath, 1000, 2000, 1, 200)
 

@@ -6,9 +6,6 @@ name: Texture generator
 
 ## Example
 ```js
-const { Texture, TextureGenerator} = require("@osbjs/txtgen")
-const { Sprite, Origin, Layer } = require("@osbjs/osbjs")
-
 const folderPath = ""
 const txtGen = new TextureGenerator(folderPath, "sb/lyrics")
 

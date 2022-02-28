@@ -43,8 +43,6 @@ interface FontOptions {
 
 ## Example
 ```javascript
-const { Lyrics } = require("@osbjs/components")
-
 const folderPath = "D:/osu!/Songs/map_folder"
 const lyrics = new Lyrics(folderPath, "sb/lyrics", "./lyrics.srt", {
 	perCharacter: true,

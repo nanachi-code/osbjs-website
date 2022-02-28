@@ -13,7 +13,6 @@ Hide beatmap background.
 
 ## Example
 ```javascript
-const { RemoveBackground } = require("@osbjs/components")
 const noBg = new RemoveBackground("bg.jpg")
 
 scene.registerComponents(noBg)
