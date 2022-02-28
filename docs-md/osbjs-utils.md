@@ -45,6 +45,21 @@ new OsbColor(r: number, g: number, b: number)
 
 Only use with sprite/animation.
 
+### Instance methods
+#### `toHexString`
+```typescript
+color.toHexString(): string
+```
+Converts rgb color to its corresponding hex string.
+
+### Static methods
+#### `fromHexString`
+```typescript
+OsbColor.fromHexString(color: string): OsbColor
+```
+Create an OsbColor from a hex string
+
+
 ## OsbVector2
 ```typescript
 new OsbVector2(x: number, y: number)

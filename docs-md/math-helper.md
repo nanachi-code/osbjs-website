@@ -20,3 +20,9 @@ Converts radians to degrees.
 clamp(value: number, min: number, max: number): number
 ```
 Clamps the value to be between min and max.
+
+### `lerp`
+```typescript
+lerp(x: number, xMin: number, xMax: number, yMin: number, yMax: number): number
+```
+Linear interpolation.

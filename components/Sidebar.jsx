@@ -54,6 +54,10 @@ const sidebarItems = [
 				title: 'Utils',
 			},
 			{
+				documentSlug: 'osbjs-expressions',
+				title: 'Expressions',
+			},
+			{
 				documentSlug: 'osbjs-enums',
 				title: 'Enums',
 			},
