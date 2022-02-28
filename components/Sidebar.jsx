@@ -139,10 +139,6 @@ const sidebarItems = [
 		title: 'Math',
 		items: [
 			{
-				documentSlug: 'math-introduction',
-				title: 'Introduction',
-			},
-			{
 				documentSlug: 'math-helper',
 				title: 'Helper functions',
 			},
