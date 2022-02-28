@@ -174,6 +174,10 @@ const sidebarItems = [
 				documentSlug: 'math-matrix4',
 				title: 'Matrix4',
 			},
+			{
+				documentSlug: 'math-random',
+				title: 'Random numbers',
+			},
 		],
 	},
 ]

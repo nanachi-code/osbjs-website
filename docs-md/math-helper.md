@@ -2,17 +2,6 @@
 name: Helper functions | math
 ---
 # Helper functions
-### `randInt`
-```typescript
-randInt(low: number, high: number): number
-```
-Random integer in the interval [low, high].
-
-### `randFloat`
-```typescript
-randFloat(low: number, high: number) : number
-```
-Random float in the interval [low, high].
 
 ### `degToRad`
 ```typescript
