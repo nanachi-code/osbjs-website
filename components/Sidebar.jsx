@@ -19,7 +19,7 @@ const sidebarItems = [
 		],
 	},
 	{
-		title: 'osbjs',
+		title: 'Core',
 		items: [
 			{
 				documentSlug: 'osbjs-storyboard',
@@ -64,46 +64,38 @@ const sidebarItems = [
 		],
 	},
 	{
-		title: 'cli',
+		title: 'CLI',
 		items: [
 			{
-				documentSlug: 'cli-usage',
-				title: 'Usage',
+				documentSlug: 'cli',
+				title: 'CLI',
 			}
 		]
 	},
 	{
-		title: 'osujs',
+		title: 'Beatmap parser',
 		items: [
 			{
-				documentSlug: 'osujs-introduction',
-				title: 'Introduction',
-			},
-			{
-				documentSlug: 'osujs-beatmap',
+				documentSlug: 'beatmap',
 				title: 'Beatmap',
 			},
 			{
-				documentSlug: 'osujs-hitobjects',
+				documentSlug: 'beatmap-hitobjects',
 				title: 'Hit objects',
 			},
 			{
-				documentSlug: 'osujs-types',
+				documentSlug: 'beatmap-types',
 				title: 'Types',
 			},
 			{
-				documentSlug: 'osujs-enums',
+				documentSlug: 'beatmap-enums',
 				title: 'Enums',
 			},
 		],
 	},
 	{
-		title: 'components',
+		title: 'Pre-built components',
 		items: [
-			{
-				documentSlug: 'components-introduction',
-				title: 'Introduction',
-			},
 			{
 				documentSlug: 'components-bg',
 				title: 'Background',
@@ -127,10 +119,10 @@ const sidebarItems = [
 		],
 	},
 	{
-		title: 'txtgen',
+		title: 'Texture generator',
 		items: [
 			{
-				documentSlug: 'txtgen-introduction',
+				documentSlug: 'txtgen',
 				title: 'Introduction',
 			},
 			{
@@ -144,7 +136,7 @@ const sidebarItems = [
 		],
 	},
 	{
-		title: 'math',
+		title: 'Math',
 		items: [
 			{
 				documentSlug: 'math-introduction',

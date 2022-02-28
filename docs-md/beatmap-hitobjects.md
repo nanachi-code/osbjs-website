@@ -1,5 +1,5 @@
 ---
-name: Hit objects | osujs
+name: Hit objects 
 ---
 
 # Hit objects

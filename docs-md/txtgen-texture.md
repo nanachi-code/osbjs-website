@@ -1,5 +1,5 @@
 ---
-name: Texture | txtgen
+name: Texture
 ---
 
 # Texture

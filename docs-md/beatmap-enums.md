@@ -1,5 +1,5 @@
 ---
-name: Enums | osujs
+name: Enums 
 ---
 
 # Enums

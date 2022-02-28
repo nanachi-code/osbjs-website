@@ -1,5 +1,5 @@
 ---
-name: Types | osujs
+name: Types 
 ---
 
 # Types

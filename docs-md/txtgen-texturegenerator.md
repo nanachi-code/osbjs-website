@@ -1,5 +1,5 @@
 ---
-name: TextureGenerator | txtgen
+name: TextureGenerator
 ---
 
 # TextureGenerator

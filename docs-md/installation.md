@@ -4,19 +4,19 @@ name: Getting started with osbjs
 
 # Getting started with osbjs
 
+*Note*: `osbjs` uses `node-canvas` for generating image so make sure you have `node-gyp` installed. Read [this section](https://github.com/nodejs/node-gyp#installation) for more info on how to install `node-gyp` for your operating system.
+
 ## CLI (Recommended)
 
-A recommended way to setup your project is to use `@osbjs/cli`, which sets up everything automatically for you.
+A recommended way to setup your project is to use the cli, which sets up everything automatically for you.
 ```ssh
-npx @osbjs/cli create-storyboard
+npx @osbjs/osbjs create-storyboard
 ```
 
 After the installation is complete:
 - you need to change `path` and `filename` in the osbjs config file to your beatmap folder path and osb filename respectively.
 - start writing some codes.
 - run `npm run build` and see the result in the osu editor.
-
-If you are not familiar with the [component concept](/docs/introducing-components), you can take a look at the following section on how to setup `osbjs` manually.
 
 ## Manual setup
 If you are creating a simple storyboard that doesn't need to be seperated into multiple files, you can simply install `osbjs` in your project.

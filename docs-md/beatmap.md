@@ -1,5 +1,5 @@
 ---
-name: Beatmap | osujs
+name: Beatmap
 ---
 
 # Beatmap

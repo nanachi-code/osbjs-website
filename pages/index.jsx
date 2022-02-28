@@ -107,43 +107,37 @@ export default function Home(props) {
 				{/* Feature 3 */}
 				<section className="mx-auto mb-40 w-full max-w-screen-xl md:mb-48">
 					<div className="mb-6 md:mb-20 md:text-center">
-						<h2 className="text-3xl font-bold md:text-5xl">Optional packages</h2>
-						<p className="mt-3 md:mt-6 md:text-lg">These are packages that help you speed up your storyboarding process</p>
+						<h2 className="text-3xl font-bold md:text-5xl">Features</h2>
 					</div>
 
 					<div className="grid gap-6 md:grid-cols-3">
-						<Link href="/docs/cli-usage">
+						<Link href="/docs/cli">
 							<a className="rounded border border-black p-3 transition duration-200 hover:bg-blue-100">
 								<div className="font-bold">cli</div>
-								<p>CLI tool for osbjs</p>
 							</a>
 						</Link>
 
-						<Link href="/docs/osujs-introduction">
+						<Link href="/docs/beatmap">
 							<a className="rounded border border-black p-3 transition duration-200 hover:bg-blue-100">
-								<div className="font-bold">osujs</div>
-								<p>osu! beatmap parser</p>
+								<div className="font-bold">beatmap parser</div>
 							</a>
 						</Link>
 
-						<Link href="/docs/math-introduction">
+						<Link href="/docs/math">
 							<a className="rounded border border-black p-3 transition duration-200 hover:bg-blue-100">
-								<div className="font-bold">math</div>
-								<p>Math helpers</p>
+								<div className="font-bold">builtin math library</div>
 							</a>
 						</Link>
 
-						<Link href="/docs/txtgen-introduction">
+						<Link href="/docs/txtgen">
 							<a className="rounded border border-black p-3 transition duration-200 hover:bg-blue-100">
-								<div className="font-bold">txtgen</div>
-								<p>Text image generator for osbjs</p>
+								<div className="font-bold">texture generator</div>
 							</a>
 						</Link>
 
-						<Link href="/docs/components-introduction">
+						<Link href="/docs/components">
 							<a className="rounded border border-black p-3 transition duration-200 hover:bg-blue-100">
-								<div className="font-bold">components</div>
-								<p>osbjs pre-built components</p>
+								<div className="font-bold">pre-built components</div>
 							</a>
 						</Link>
 					</div>

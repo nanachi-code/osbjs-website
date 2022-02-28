@@ -1,18 +1,8 @@
 ---
-name: txtgen
+name: Texture generator
 ---
 
-# txtgen
-
-Text image generator for osbjs
-
-*Note*: `txtgen` uses `node-canvas` for generating image so make sure you have `node-gyp` installed. Read [this section](https://github.com/nodejs/node-gyp#installation) for more info on how to install `node-gyp` for your operating system.
-
-
-## Install
-```bash
-npm i @osbjs/txtgen
-```
+# Texture generator
 
 ## Example
 ```js
