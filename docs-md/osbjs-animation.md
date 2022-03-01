@@ -6,7 +6,7 @@ name: Animation
 ```typescript
 const animation = new Animation(
 	path: string,
-	layer: Layer,
+	layer: Layer = = Layer.Background,
 	origin: Origin = Origin.Center,
 	frameCount: number,
 	frameDelay: number,

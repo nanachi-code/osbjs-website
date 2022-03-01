@@ -6,7 +6,7 @@ name: Sprite
 ```typescript
 const sprite = new Sprite(
 	path: string,
-	layer: Layer,
+	layer: Layer = Layer.Background,
 	origin: Origin = Origin.Center,
 	initialPosition: OsbVector2 = new OsbVector2(320, 480)
 )

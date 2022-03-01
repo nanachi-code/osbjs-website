@@ -4,7 +4,7 @@ name: Expressions
 
 # Expressions
 
-An expression is a reusable function that takes a `Sprite`/`Animation`/`Loop` group/`Trigger` group(or `Commandable` in short) and performs a predefined task, which will make your code much more cleaner. The good thing is, you can define your own expressions and reuse across components.
+An expression is a reusable function that takes a `Sprite`/`Animation`/`Loop` group/`Trigger` group(or `Commandable` in short) and performs a predefined task, which will make your code much more cleaner. The good thing is, you can define your own expressions (and it's recommended to do so) and reuse across components.
 Example:
 ```js
 function rotateWhileMovingUp(sprite, startTime, endTime, originY, offset, angle) {
