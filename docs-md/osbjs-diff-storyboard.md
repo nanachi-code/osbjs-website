@@ -13,6 +13,13 @@ Create a new storyboard instance for a specific difficulty. This is helpful if y
 - **filename**: osu filename.
 - **path**: full path to beatmap folder.
 
+## Instance properties
+### `beatmap`
+```ts
+sb.beatmap : Beatmap
+```
+Get info about this beatmap.
+
 ## Instance methods
 
 ### `registerComponents`
