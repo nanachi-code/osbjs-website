@@ -95,7 +95,7 @@ Randomly rotates around an "origin" angle.
 * **endTime**: end time of the expression
 * **originAngle**: the "origin" angle
 
-## wiggleY
+## wiggleColor
 ```typescript
 function wiggleColor(
 	commandable: Commandable,
@@ -103,8 +103,8 @@ function wiggleColor(
 	amplitude: number,
 	startTime: number,
 	endTime: number,
-	color1: OsbColor,
-	color2: OsbColor
+	gradientMin: OsbColor,
+	gradientMax: OsbColor
 ) 
 ```
 Randomly "wiggle" between 2 colors.
